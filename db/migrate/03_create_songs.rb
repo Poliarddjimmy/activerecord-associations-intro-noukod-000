@@ -9,8 +9,7 @@ class CreateSongs < ActiveRecord::Migration[4.2]
     create_table :songs do |a|
       a.string :name
       a.integer :artist_id
-      a.string :day
-      a.integer :rating
+      a.integer :genre_id
     end
   end
 end
