@@ -6,6 +6,11 @@ class CreateSongs < ActiveRecord::Migration[4.2]
   end
   
   def move
-    create_table
+    create_table :songs do |a|
+      a.string :name
+      a.string :network
+      a.string :day
+      a.integer :rating
+    end
   end
 end
